@@ -44,11 +44,15 @@ import os
 import re
 
 import requests
+
+API_ID = 22263567
+API_HASH = "258fb6f6cdfa8220b74a4a6753b2ece6"
+BOT_TOKEN = "6263534418:AAEG5-jB7mv4rwt2lu-7sAgLUqqoxqnrQQc"
 bot = Client(
     "CW",
-    bot_token=os.environ.get("BOT_TOKEN"),
-    api_id=int(os.environ.get("API_ID")),
-    api_hash=os.environ.get("API_HASH")
+    bot_token=BOT_TOKEN,
+    api_id=API_ID,
+    api_hash=API_HASH
 )
 
 logger = logging.getLogger()
